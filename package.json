@@ -1,0 +1,27 @@
+{
+  "name": "trhweb",
+  "version": "1.0.0",
+  "description": "\"The Riding Hunter is Superbikers Club. It the the biggest superbike club of Lucknow, the capital city of Uttar Pradesh!\"",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/txtasad/trhweb.git"
+  },
+  "author": "~asad~",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/txtasad/trhweb/issues"
+  },
+  "homepage": "https://github.com/txtasad/trhweb#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "hbs": "^4.0.6",
+    "moment": "^2.25.3",
+    "mongoose": "^5.9.13",
+    "multer": "^1.4.2"
+  }
+}
