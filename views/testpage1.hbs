@@ -32,13 +32,8 @@
 
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"></style>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
-<script src="http://malsup.github.com/jquery.form.js"></script> 
 
 	
-
-
     <link rel="stylesheet" href="/css/flaticon.css">
     <link rel="stylesheet" href="/css/icomoon.css">
     <link rel="stylesheet" href="/css/style.css">
@@ -209,6 +204,9 @@
       </div>
 
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+<script src="https://malsup.github.com/jquery.form.js"></script> 
   <script src="/js/jquery-migrate-3.0.1.min.js"></script>
   <script src="/js/popper.min.js"></script>
   <script src="/js/bootstrap.min.js"></script>
@@ -284,7 +282,7 @@ function callMe(isFolder,id,folder) {
     cache: false,
     data: JSON.stringify(data0),
     enctype: 'multipart/form-data',
-    url: 'http://localhost:3000/delete_images',
+    url: '/delete_images',
     success: function (response) {
         $("#statusDelete").empty().text(response.msg);
         setTimeout(()=>{$("#statusDelete").empty().text();location.reload()},1500)
